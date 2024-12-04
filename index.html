@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Login</title>
 </head>
 <body>
     <main>
-        <section id="imgagem">
-
-        </section>
-        <section id="formualrio">
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazerr as configurações no seu ambiente </p>
+        <div id="login">
+            <section id="imagem">
+                <img src="" alt="" >
+            </section>
+            <section id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazerr as configurações no seu ambiente </p>
+                <form action="login.php" method="post">
+                    <p>
+                        <label for="inUsuario"><span class="material-symbols-outlined">person</span>
+                        </label>
+                        <input type="text" name="usuario" id="inUsuario">
+                    </p>
+                    <p>
+                        <label for="inSenha"><span class="material-symbols-outlined">key</span></label>
+                        <input type="password" name="senha" id="inSenha" minlength="8">
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar" class="btn btn-submit">
+                        <button class="btn btn-forget">Esqueci Senha</button>
+                    </p>
+                </form>
+        </div>
         </section>
     </main>
 </body>
