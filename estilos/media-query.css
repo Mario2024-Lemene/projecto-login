@@ -21,6 +21,12 @@ desktop 992px
         width: 70%;
         float: right;
     }
+    section#formulario > h1{
+        font-size: 2em;
+    } 
+    section#formulario > p{
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -31,13 +37,19 @@ desktop 992px
         width: 980px;
     }
     section#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
     section#formulario{
-        float: right;
+        float: left;
         width: 50%;
     }
     
+    section#formulario > h1{
+        font-size: 2em;
+    } 
+    section#formulario > p{
+        font-size: 1.3em;
+    }
 }
