@@ -12,6 +12,7 @@ desktop 992px
 
     div#login {
         width: 80vw;
+        height: 360px;
     }
 
     section#imagem {
@@ -55,6 +56,7 @@ desktop 992px
     
     div#login {
         width: 980px;
+        height: 360px;
     }
     
     section#imagem {
