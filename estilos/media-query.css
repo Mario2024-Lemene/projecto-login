@@ -6,50 +6,87 @@ tablets 768px ate 992px
 desktop 992px
 */
 @media screen and (min-width: 768px) and (max-width:992px) {
-    body{
+    body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+
     div#login {
         width: 80vw;
     }
-    section#imagem{
+
+    section#imagem {
         width: 30%;
         float: left;
         height: 100%;
     }
-    section#formulario{
+
+    section#formulario {
         width: 70%;
         float: right;
     }
-    section#formulario > h1{
+
+    section#formulario>h1 {
         font-size: 2em;
-    } 
-    section#formulario > p{
+    }
+
+    section#formulario>p {
         font-size: 1.3em;
+    }
+
+    form>input[type=submit] {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    form>a.botao {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    body{
+    body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+    
     div#login {
         width: 980px;
     }
-    section#imagem{
+    
+    section#imagem {
         float: right;
         width: 50%;
         height: 100%;
     }
-    section#formulario{
+    
+    section#formulario {
         float: left;
         width: 50%;
     }
-    
-    section#formulario > h1{
+
+    section#formulario>h1 {
+        
         font-size: 2em;
-    } 
-    section#formulario > p{
+    }
+
+    section#formulario>p {
         font-size: 1.3em;
+    }
+    form>input[type=submit] {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    
+    form>a.botao {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
     }
 }

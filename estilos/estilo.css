@@ -5,26 +5,30 @@
     verde: #49a09d
     lilas: #5f2c82
 */
-*{
+* {
     padding: 0px;
     margin: 0px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
-body, html{
+
+body,
+html {
     height: 100vh;
     background-color: #5f2c82;
     width: 100vw;
     position: absolute;
 }
-main{
+
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
-div#login{
+
+div#login {
     background-color: white;
-    height: 500px;
+    height: 515px;
     width: 250px;
     border-radius: 20px;
     overflow: hidden;
@@ -37,22 +41,76 @@ div#login{
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
-section#imagem{
+
+section#imagem {
     background: #5f2c82 url(../img/imagem.jpg) no-repeat;
     background-position: center center;
     height: 200px;
     display: block;
 }
 
-section#formulario{
+section#formulario {
     display: block;
     padding: 10px;
 }
-section#formulario > h1{
+
+section#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-section#formulario > p{
+section#formulario>p {
     font-size: 0.8em;
+}
+
+form > div.campo{
+    background-color: #5f2c82;
+    /* width: 100%; em parte esse esetilo e desnecessario pois ja tem 100% da largura total*/
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+form>input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form>input[type=submit]:hover {
+    background-color: #124948;
+}
+
+form>a.botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: #043f3d;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #49a09d;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+form>a.botao:hover{
+    background-color: #94fffb;
+    
+}
+
+form>a.botao > span{
+    font-size: 0.5em;
 }
